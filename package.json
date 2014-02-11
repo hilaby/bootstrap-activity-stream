@@ -1,0 +1,24 @@
+{
+  "name": "BootStrapActivityStream",
+  "version": "1.0.0",
+  "description": "Activity Stream",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Activity",
+    "Stream"
+  ],
+  "author": "Khalid Hilaby",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-haml": "~0.1.1",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

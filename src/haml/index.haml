@@ -1,0 +1,40 @@
+!!! 5
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+%html.no-js{:lang => "en"}
+	%head
+		%meta{:charset => "utf-8"}
+		%title SP2
+		%meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
+		%link{:rel => "stylesheet", :href => "css/bootstrap.min.css"}
+		%link{:rel => "stylesheet", :href => "css/style.css"}
+		/[if (lt IE 9) & (!IEMobile)]
+			%script{:src => "/js/html5shiv.js"}
+			%script{:src => "/js/respond.min.js"}
+	%body
+		%ul.activityView
+			- 4.times do |n|
+				%li.col-xs-12.milestone
+					.col-xs-12.col-sm-2
+						%span DD Month YYYY
+					.activtyRight.col-xs-10.hidden-xs
+						.activity
+				- 4.times do |n|
+					%li.col-xs-12
+						.activtyLeft.col-xs-12.col-sm-2
+							.pull-right Action Taken
+						.activtyRight.col-xs-12.col-sm-10.col-md-9.col-lg-8
+							.activity
+								.meta
+									%img.profilePic{:src => "http://lorempixel.com/60/60"}
+									Username
+								.message
+									alias consequatur aut perferendis sit voluptatem accusantium doloremque aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo aspernatur aut odit aut fugit sed quinon provident sed ut perspiciatis unde omnis iste natus error similique sunt in culpa qui officia deserunt mollitia animi id est laborum et dolorum fuga et.
+			%li.col-xs-12.milestone.showMore
+				.col-xs-12.col-sm-2
+					%span
+						%button.btn.btn-info Load More
+				.activtyRight.col-xs-10.hidden-xs
+					.activity
